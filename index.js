@@ -1,8 +1,7 @@
 class Formatter {
   //add static methods here
-  static capitalize(a) {
-    
-     console.log( a.charAt(0).toUpperCase() + a.slice(1));
+  static capitalize(str){
+    return str.replace(str[0], str[0].toUpperCase())
   }
   static sanitize(input){
     console.log(input.replace(/\W/g, ''))
